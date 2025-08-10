@@ -1,8 +1,8 @@
 import express from 'express';
 
-import globalErrorHandler from './middlewares/globalErrorHandler';
-import notFound from './middlewares/notFound';
-import router from './routes';
+import globalErrorHandler from '../middlewares/globalErrorHandler.js';
+import notFound from '../middlewares/notFound.js';
+import router from '../routes/index.js';
 
 const app = express();
 

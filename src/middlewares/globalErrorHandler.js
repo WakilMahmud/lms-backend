@@ -1,10 +1,10 @@
 import { ZodError } from 'zod';
-import handleZodError from '../errors/handleZodError';
-import AppError from '../errors/AppError';
-import handleDuplicateError from '../errors/handleDuplicateError';
-import handleCastError from '../errors/handleCastError';
-import handleValidationError from '../errors/handleValidationError';
-import config from '../config';
+import handleZodError from '../errors/handleZodError.js';
+import AppError from '../errors/AppError.js';
+import handleDuplicateError from '../errors/handleDuplicateError.js';
+import handleCastError from '../errors/handleCastError.js';
+import handleValidationError from '../errors/handleValidationError.js';
+import config from '../config/index.js';
 
 const globalErrorHandler = (err, req, res, next) => {
     console.log(err.statusCode);

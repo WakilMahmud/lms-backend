@@ -1,4 +1,4 @@
-import catchAsync from '../utils/catchAsync';
+import catchAsync from '../utils/catchAsync.js';
 
 const validateRequest = (schema) => {
     return catchAsync(async (req, res, next) => {

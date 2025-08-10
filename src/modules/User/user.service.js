@@ -1,9 +1,9 @@
-import { User } from './user.model';
-import { generateStudentId } from './user.utils';
+import { User } from './user.model.js';
+import { generateStudentId } from './user.utils.js';
 
 const createStudentIntoDB = async (email) => {
     const userData = {
-        id: generateStudentId(),
+        id: await generateStudentId(),
         email
     };
 
