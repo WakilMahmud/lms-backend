@@ -1,8 +1,9 @@
 {
     "name": "lms-backend",
+    "type": "module",
     "version": "1.0.0",
     "description": "Learning Management System",
-    "main": "src/core/server.js",
+    "main": "./src/core/server.js",
     "scripts": {
         "start:dev": "node --watch ./src/core/server.js",
         "lint": "npx eslint \"./src/**/*.js\"",
@@ -21,11 +22,12 @@
     ],
     "author": "",
     "license": "ISC",
-    "type": "module",
     "dependencies": {
         "dotenv": "^17.2.1",
         "express": "^5.1.0",
-        "mongoose": "^8.17.1"
+        "http-status": "^2.1.0",
+        "mongoose": "^8.17.1",
+        "zod": "^4.0.17"
     },
     "devDependencies": {
         "@eslint/js": "^9.32.0",
